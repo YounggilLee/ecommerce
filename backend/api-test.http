@@ -1,0 +1,23 @@
+@hostname = localhost
+//@hostname = remote server
+@port = 8000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+@token = Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE4NjkxMjUyLCJqdGkiOiJkZmFkMWJiY2I5ZDQ0ZWQ4OWY2Mjk0YmM2ZjMyNjZmMyIsInVzZXJfaWQiOjF9.2nf_qQEJGned5Fiv7qeNbvp9qonxjjqh1J5KJwz7-s4
+GET http://{{host}}/api/users/profile
+Content-Type: {{contentType}}
+Authorization : {{token}}
+
+###
+
+POST http://{{host}}/api/
+Content-Type: {{contentType}}
+Authorization : {{token}}
+
+{
+
+}
+
+
+
+
